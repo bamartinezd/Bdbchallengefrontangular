@@ -1,0 +1,20 @@
+<table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Cargo</th>
+        <th scope="col">Salario</th>
+        <th scope="col">Jefe</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <th scope="row">{{employee.id}}</th>
+        <td>{{employee.name}}</td>
+        <td>{{employee.position}}</td>
+        <td>{{employee.salary}}</td>
+        <td>{{employee.boss_id}}</td>
+      </tr>
+    </tbody>
+  </table>
